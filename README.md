@@ -70,6 +70,12 @@ The settings to be applied to all `series` of all charts can be defined in the `
 
 Your charts will react to light mode and dark mode when you have `defaults.darkModeConfig` settings defined. In that case `darkModeConfig` will be applied automatically to each chart by the plugin when dark mode is active.
 
+When creating the config object, you have access to three generated variables you might want to use to adapt your chart to its context:
+
+- `containerWidth`: Will give you the current width of the chart container as a number of pixels.
+- `containerHeight`: Will give you the current height of the cart container as a number of pixels.
+- `isDarkMode`: Will be true if the page is viewed in dark mode, otherwise false.
+
 ## Install
 
 `npm install markdown-it-responsive-echarts`

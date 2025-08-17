@@ -102,9 +102,9 @@ function prepareChart(chartDefinition) {
   }
   function adjustConfig() {
     const defaults = getDefaults();
-    const ctx = document.querySelector("#${containerId}"); //might be used by chart config
-    const width = ctx.clientWidth; //might be used by chart config
-    const height = ctx.clientHeight; //might be used by chart config
+    const container = document.querySelector("#${containerId}"); //might be used by chart config
+    const containerWidth = ctx.clientWidth; //might be used by chart config
+    const containerHeight = ctx.clientHeight; //might be used by chart config
     const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;  //might be used by chart config
     ${chartDefinition}
     return applyDefaults(defaults, config);
